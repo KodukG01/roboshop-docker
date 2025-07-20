@@ -55,9 +55,7 @@ services:
       AMQP_USER: roboshop
       AMQP_PASS: roboshop123
     depends_on:
-      - catalogue
-      - user
+      - rabbitmq
       - cart
-      - shipping
-      - payment
+      - user
 
