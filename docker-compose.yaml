@@ -42,7 +42,7 @@ services:
     environment:
       RabbitMQ_DEFAULT_USER: roboshop
       RabbitMQ_DEFAULT_PASS: roboshop123
-  payments:
+  payment:
     image: gautamjames/payments:v1
     container_name: payment
     environment:
