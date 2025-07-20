@@ -43,7 +43,7 @@ services:
       RabbitMQ_DEFAULT_USER: roboshop
       RabbitMQ_DEFAULT_PASS: roboshop123
   payment:
-    image: gautamjames/payments:v1
+    image: gautamjames/payment:v1
     container_name: payment
     environment:
       CART_HOST: cart
