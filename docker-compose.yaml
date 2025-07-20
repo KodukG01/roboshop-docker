@@ -59,3 +59,14 @@ services:
       - cart
       - user
 
+  frontend:
+    image: gautamjames/frontend:v1
+    container_name: frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - catalogue
+      - user
+      - cart
+      - shipping
+      - payment
